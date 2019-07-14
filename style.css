@@ -30,6 +30,46 @@ header {
 	position: relative;
 }
 
+header:before, header:after {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 50px;
+	background: #f2f2f2;
+	top: 100%;
+	-webkit-transform:translateY(-25px) rotate(45deg);
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
+    transform:translateY(-25px) rotate(45deg);
+    z-index:1;
+}
+header:before {
+    left:calc(50% - 25px);
+}
+
+header:after {
+    left:calc(50% + 25px);
+}
+
+
+.white {
+    background:#f2f2f2;
+    width:calc(50% - 25px);
+    height:30px;
+    position:absolute;
+    bottom:-5px;
+    border-color:orange;
+}
+.white.left {
+    left:0;
+}
+
+.white.right {
+    right:0;
+}
+
+ 	
+
 header .contacts-bg {
 	background-color: #29323c;
 	z-index: 100;
@@ -127,6 +167,7 @@ nav a:hover {
 	display: flex;
 	justify-content: flex-end;
 	display: none;
+	z-index: 100;
 }
 
 .mob-nav {
@@ -135,12 +176,13 @@ nav a:hover {
 	right: -50%;
 	height: 100vh;
 	background-color: #424242;
-	box-shadow: -2px 2px 2px 0 rgba(0,0,0, .5);
+	box-shadow: -2px 2px 5px 2px rgba(0,0,0, .3);
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: flex-end;
 	transition: all .3s ease-in-out;
+	z-index: 200;
 
 }
 
@@ -228,6 +270,7 @@ nav a:hover {
 }
 .promo-video iframe {
 	width: 100%;
+	display: block;
 }
 .promo-content {
 	display: flex;
@@ -406,6 +449,10 @@ article p {
 	padding: 30px 0;
 }
 
+.comments h2, .comments h3 {
+	text-align: center;
+}
+
 .comments .wrapper {
 	position: relative;
 	list-style: none;
@@ -429,7 +476,7 @@ article p {
 }
 
 .comments .arrows div:hover {
-	background-color: #c2c2c2;
+	background-color: #f2f2f2;
 }
 
 .comments .arrows .left {
@@ -497,7 +544,7 @@ article p {
 	flex-flow: row wrap;
 }
 .client_container .client_photo{
-	background-image: url(img/sprites.png);
+	background-image: url(img/sprites2.png);
 	width: 250px;
 	height: 114px;
 	content: "";
@@ -677,121 +724,3 @@ footer .copyright {
 	font-family: "Open Sans Condensed", sans-serif;	
 }
 
-
-/*MEDIAQUERIES*/
-
-@media screen and (max-width: 1200px) {
-	
-	.container {
-		width: 100%;
-		padding: 0 15px;
-	}
-	nav a {
-		font-size: 0.9rem;
-		padding: 10px 10px;
-	}
-	.slide h1 {
-		font-size: 2rem;
-		margin-top: 15vh; 
-	}
-
-	.slide h3 {
-		font-size: 1.5rem;
-		margin: 0 20px;
-	}
-	.promo-content p {
-		font-size: 1rem;
-	}
-	.about .person {
-		padding: 50px 0 0 0;
-	}
-
-	.info {
-		padding: 0;
-	}
-	.info .container {
-		padding: 15px 0 0 0;
-
-	}
-	.info h2, .info h3, .comments h2, .comments h3{
-		margin-left: 15px;
-	} 
-	.info .items {
-		margin-bottom: 0;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	body {
-		font-size: 1rem;
-	}
-	header .contacts-content div {
-		margin: 0;
-	}
-	header .contacts-content {
-		justify-content: space-around
-	}
-	.navigation nav {
-		display: none;
-	}
-	#bar {
-		display: block;
-	}
-
-	.promo {
-    padding-top: 30px;
-	}
-
-	.services {
-		margin-top: 20px ;
-	}
-
-	.services-item {
-		padding: 30px 25px;
-		margin: 20px 0;
-		font-size: 1rem;
-	}
-	.services-item span {
-		font-size: 2rem;
-		line-height: 3rem;
-	}
-	.about .person {
-		padding: 0;
-		flex-flow: column nowrap;
-	}
-	.person .photo {
-		margin-top: 15px;
-	}
-	.comments .item .item-wrap {
-		flex-flow: column nowrap;
-	}
-	.comments .avatar {
-		width: 170px;
-	}
-	.footer-wrap h4 {
-		margin-top: 20px;
-	}
-	 .container {
-		flex-flow: column nowrap !important;
-	}
-	.col-1,.col-2 {
-		margin: 0;
-		width: 100%;
-	}
-	article h2 {
-		margin-top: 20px;
-	}
-}
-
-@media screen and (max-width: 425px) {
-	header .contacts-content {
-		font-size: 0.6rem;
-	}
-	.form-section .form-field form input {
-		max-width: 100%;
-		min-width: 200px;
-	}
-	.comments .text  {
-		padding: 0;
-	}
-}

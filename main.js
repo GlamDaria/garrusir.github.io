@@ -72,6 +72,12 @@ function mobMenu(){
 
 	});
 
+	bg.addEventListener('click', ()=>{
+		menu.style.right = "-50%";
+		bg.classList.remove('active');
+		document.body.style.overflow = 'visible';
+	})
+
 }
 
 

@@ -1,0 +1,163 @@
+
+/*MEDIAQUERIES*/
+
+@media screen and (max-width: 1200px) {
+	
+	.container {
+		width: 100%;
+		padding: 0 15px;
+	}
+	nav a {
+		font-size: 0.9rem;
+		padding: 10px 10px;
+	}
+	.slide h1 {
+		font-size: 2rem;
+		margin-top: 15vh; 
+	}
+
+	.slide h3 {
+		font-size: 1.5rem;
+		margin: 0 20px;
+	}
+	.promo-content p {
+		font-size: 1rem;
+	}
+	.about .person {
+		padding: 50px 0 0 0;
+	}
+
+	.info {
+		padding: 0;
+	}
+	.info .container {
+		padding: 15px 0 0 0;
+
+	}
+	.info h2, .info h3, .comments h2, .comments h3{
+		margin-left: 15px;
+	} 
+	.info .items {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 1rem;
+	}
+	header .contacts-content div {
+		margin: 0;
+	}
+	header .contacts-content {
+		justify-content: space-around
+	}
+	.navigation nav {
+		display: none;
+	}
+	#bar {
+		display: block;
+	}
+
+	.promo {
+    padding-top: 30px;
+	}
+
+	.services {
+		margin-top: 20px ;
+	}
+
+	.services-item {
+		padding: 30px 25px;
+		margin: 20px 0;
+		font-size: 1rem;
+	}
+	.services-item span {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	.about .person {
+		padding: 0;
+		flex-flow: column nowrap;
+	}
+	.about .denis {
+		flex-direction: column-reverse;
+	}
+	.about .ilona {
+		margin-top: 20px;
+	}
+	
+	.comments .item .item-wrap {
+		flex-flow: column nowrap;
+	}
+	.comments .avatar {
+		width: 170px;
+	}
+	.footer-wrap h4 {
+		margin-top: 20px;
+	}
+	 .container {
+		flex-flow: column nowrap !important;
+	}
+	.col-1,.col-2 {
+		margin: 0;
+		width: 100%;
+	}
+	.promo .container {
+		flex-flow: column-reverse nowrap !important; 
+	}
+	.promo-video {
+		margin-top: 50px;
+	}
+	article h2 {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	/*article h2 {
+		margin-top: 10px;
+	}*/
+	header .contacts-content {
+		font-size: 0.6rem;
+	}
+	iframe {
+		height: 190px !important;
+	}
+	.form-section .form-field form input {
+		max-width: 100%;
+		min-width: 200px;
+	}
+	.comments {
+		padding: 5px 0;
+	}
+	.comments .text  {
+		padding: 0;
+	}
+	.info .item {
+		flex-flow: column nowrap;
+	}
+	.services-item {
+		padding: 25px 15px;
+	}
+	.services-item i {
+		font-size: 2rem;
+		width: 40px;
+	}
+	.info .items .item:nth-child(2) {
+		flex-flow: column-reverse;
+	}
+	.about .container {
+		padding: 0;
+	}
+	.about .person .desc {
+		padding: 0 15px;
+	}
+	.about img {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 425px) { 
+
+}

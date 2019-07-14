@@ -465,25 +465,37 @@ article p {
 	transition: all .7s ease-in-out;
 }
 .comments .arrows div {
-	font-size: 1.8rem;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 3rem;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	transition: all .3s ease;
-	padding: 10px;
 	border-radius: 50%;
 	cursor: pointer;
+	transition: all .3s ease-in-out;
 }
 
 .comments .arrows div:hover {
-	background-color: #f2f2f2;
+	background-color: rgba(224,224,224, .6);
+}
+.comments .arrows div:hover i {
+	text-shadow: none;
 }
 
 .comments .arrows .left {
 	left: 0;
+	padding-right: 5px;
 }
 .comments .arrows .right {
 	right: 0;
+	padding-left: 5px: 
+}
+.comments .arrows i {
+	text-shadow: 1px 1px 2px #434343;
 }
 .comments .item  {
 	width: calc(100vw);
@@ -674,6 +686,13 @@ article p {
 	box-shadow: inset 0px 2px 1px 1px rgba(0,0,0, .2); 
 }
 
+.form-section .title span {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	display: block;
+	margin: 15px 0;
+	text-transform: uppercase;
+}
+
 footer {
 	background-color: #203a49;
 	color: #f2f2f2;
@@ -695,11 +714,12 @@ footer a {
 }
 footer .soc-icons a {
 	font-size: 2rem;
+	margin-right: 20px;
 }
 footer .soc-icons {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-around;
+	justify-content: flex-start;
 }
 
 .footer-wrap {

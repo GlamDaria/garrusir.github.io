@@ -479,6 +479,9 @@ article p {
 	transition: all .3s ease-in-out;
 }
 
+.fa, .fas{
+	color: #709eac;
+}
 .comments .arrows div:hover {
 	background-color: rgba(224,224,224, .6);
 }
@@ -495,7 +498,7 @@ article p {
 	padding-left: 5px: 
 }
 .comments .arrows i {
-	text-shadow: 1px 1px 2px #434343;
+	text-shadow: 1px 1px 2px rgba(0,0,0, 0.4);
 }
 .comments .item  {
 	width: calc(100vw);
@@ -744,3 +747,59 @@ footer .copyright {
 	font-family: "Open Sans Condensed", sans-serif;	
 }
 
+/*услуги*/
+.bg_services{
+	background-image: url(img/bg_2.png);
+}
+.service{
+	padding: 6rem 0;
+}
+.service p{
+	padding: 1rem 0;
+}
+.service ul{
+	font-family: "Open Sans Condensed", sans-serif;	
+	list-style: none;
+	padding-bottom: 1rem;
+}
+.service ul li:before{
+	content: "✓  ";
+	color:#000000;
+}
+.service h3, .service h2{
+	text-align: center;
+}
+.service h3{
+	padding-top: 1rem;
+}
+.service_photos_flex{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding-bottom: 6rem;
+}
+.service_photo{
+	width: 50%;
+	height: 350px;
+	background-size: cover;
+	background-color: #485060;
+	background-blend-mode: overlay;
+}
+.service_photo:nth-child(1){
+	background-image: url(img/mg4.jpg);
+}
+.service_photo:nth-child(2){
+	background-image: url(img/mg1.jpg);
+}
+.service_photo:nth-child(3){
+	background-image: url(img/mg2.jpg);
+}
+.service_photo:nth-child(4){
+	background-image: url(img/mg3.jpg);
+}
+.service_photo:nth-child(5){
+	background-image: url(img/mg.jpg);
+}
+.service_photo:nth-child(6){
+	background-image: url(img/mg5.jpg);
+}

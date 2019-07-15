@@ -772,6 +772,9 @@ footer .copyright {
 .service h3{
 	padding-top: 1rem;
 }
+.service p span{
+	font-style: italic;
+}
 .service_photos_flex{
 	display: flex;
 	flex-flow: row wrap;

@@ -789,20 +789,37 @@ footer .copyright {
 	background-blend-mode: overlay;
 }
 .service_photo:nth-child(1){
-	background-image: url(img/mg4.jpg);
+	background-image: url(img/mg4.png);
 }
 .service_photo:nth-child(2){
-	background-image: url(img/mg1.jpg);
+	background-image: url(img/mg1.png);
 }
 .service_photo:nth-child(3){
-	background-image: url(img/mg2.jpg);
+	background-image: url(img/mg2.png);
 }
 .service_photo:nth-child(4){
-	background-image: url(img/mg3.jpg);
+	background-image: url(img/mg3.png);
 }
 .service_photo:nth-child(5){
-	background-image: url(img/mg.jpg);
+	background-image: url(img/mg.png);
 }
 .service_photo:nth-child(6){
-	background-image: url(img/mg5.jpg);
+	background-image: url(img/mg5.png);
+}
+
+/*кастомные*/
+#new_year{
+	background-image: url(img/ng_bg.png);
+}
+#birthday{
+	background-image: url(img/bd_bg1.png);
+}
+#party{
+	background-image: url(img/pt_bg.png);
+}
+#anniversary{
+	background-image: url(img/an_bg.png);
+}
+#corporativ{
+	background-image: url(img/cor_bg.png);
 }

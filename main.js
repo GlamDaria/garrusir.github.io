@@ -85,4 +85,23 @@ function mobMenu(){
 window.onload = () => {
 	mobMenu();
 	slider();
+
+	new Glider(document.querySelector('.glider'), {
+  	slidesToShow: 1,
+  	dots: '#dots',
+  	draggable: true,
+  	arrows: {
+    	prev: '.glider-prev',
+    	next: '.glider-next'
+  	}
+});
+	new Glider(document.querySelector('.glider-2'), {
+  	slidesToShow: 1,
+  	dots: '#dots',
+  	draggable: true,
+  	arrows: {
+    	prev: '.glider-2-prev',
+    	next: '.glider-2-next'
+  	}
+});
 }

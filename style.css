@@ -356,6 +356,15 @@ article p {
 	align-items: center;
 	padding: 50px 0;
 }
+.person .photo {
+	min-width: 400px;
+	max-width: 570px;
+}
+
+.person .glider-next, .person .glider-prev {
+	top: 50%;
+	transform: translateY(-25px);
+}
 
 .photo img {
 	width: 100%;

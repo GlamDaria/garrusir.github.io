@@ -79,10 +79,18 @@ function mobMenu(){
 	})
 
 }
-
+function callMeBack(){
+	let btn = document.getElementById('callMeBack');
+	let hid = document.getElementById("hiddenDiv")	
+	btn.onclick = function(){
+		console.log(hid);
+		hid.style.display = "block";
+	}
+}
 
 
 window.onload = () => {
 	mobMenu();
 	slider();
+	callMeBack();
 }

@@ -366,9 +366,7 @@ article p {
 	transform: translateY(-25px);
 }
 
-.person .glider-contain {
-	overflow: hidden;
-}
+
 
 .photo img {
 	width: 100%;

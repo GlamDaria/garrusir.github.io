@@ -80,11 +80,37 @@ function mobMenu(){
 
 }
 
+function fixNav(){
+	let nav = document.getElementById('navigation');
+	let slider = document.querySelector('.slide');
+	console.log(document.documentElement.scrollTop);
 
+	window.onscroll = ()=> {
+		if(document.body.scrollTop > 110 || document.documentElement.scrollTop > 110){
+			nav.classList.add('fixed-nav');
+			let topSpace = 0;
+			if ( document.documentElement.scrollTop > 200 ) {
+				topSpace = 0;	
+			} else {
+				topSpace = Math.round(document.documentElement.scrollTop - 200);
+				slider.style.marginTop = "235px";
+
+			}	
+			console.log(topSpace);
+			nav.style.top = topSpace + "px";	
+		} else {
+			nav.style.top = 0;
+			slider.style.marginTop = "100px";
+			nav.classList.remove('fixed-nav');
+		}
+	
+	}
+}
 
 window.onload = () => {
 	mobMenu();
 	slider();
+	fixNav();
 
 	new Glider(document.querySelector('.glider'), {
   	slidesToShow: 1,

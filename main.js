@@ -93,14 +93,14 @@ function fixNav(){
 				topSpace = 0;	
 			} else {
 				topSpace = Math.round(document.documentElement.scrollTop - 200);
-				slider.style.marginTop = "235px";
+				slider.classList.add('slide-top');
 
 			}	
 			console.log(topSpace);
 			nav.style.top = topSpace + "px";	
 		} else {
 			nav.style.top = 0;
-			slider.style.marginTop = "100px";
+			slider.classList.remove('slide-top');
 			nav.classList.remove('fixed-nav');
 		}
 	
@@ -116,6 +116,7 @@ window.onload = () => {
   	slidesToShow: 1,
   	dots: '#dots',
   	draggable: true,
+  	resizeLock: true,
   	arrows: {
     	prev: '.glider-prev',
     	next: '.glider-next'
@@ -125,6 +126,7 @@ window.onload = () => {
   	slidesToShow: 1,
   	dots: '#dots',
   	draggable: true,
+  	resizeLock: true,
   	arrows: {
     	prev: '.glider-2-prev',
     	next: '.glider-2-next'

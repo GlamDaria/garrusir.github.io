@@ -83,7 +83,6 @@ function mobMenu(){
 function fixNav(){
 	let nav = document.getElementById('navigation');
 	let slider = document.querySelector('.slide');
-	console.log(document.documentElement.scrollTop);
 
 	window.onscroll = ()=> {
 		if(document.body.scrollTop > 110 || document.documentElement.scrollTop > 110){
@@ -96,7 +95,7 @@ function fixNav(){
 				slider.classList.add('slide-top');
 
 			}	
-			console.log(topSpace);
+			
 			nav.style.top = topSpace + "px";	
 		} else {
 			nav.style.top = 0;
@@ -132,4 +131,5 @@ window.onload = () => {
     	next: '.glider-2-next'
   	}
 });
+	 new WOW().init();
 }

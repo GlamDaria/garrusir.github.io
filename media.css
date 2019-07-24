@@ -156,6 +156,24 @@
 	.about img {
 		display: block;
 	}
+	.person .photo {
+		width: 100%;
+	}
+	.person .glider-next {
+		right: 15px;
+		background-color: rgba(0,0,0, .5);
+		border-radius: 50%;
+    	line-height: 30px;
+    	padding: 0 5px 5px 5px;
+	}
+
+	.person .glider-prev {
+		left: 15px;
+		background-color: rgba(0,0,0, .5);
+		border-radius: 50%;
+    	line-height: 30px;
+    	padding: 0 5px 5px 5px;
+	}
 }
 
 @media screen and (max-width: 425px) { 

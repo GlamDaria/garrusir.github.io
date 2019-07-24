@@ -80,6 +80,7 @@ function mobMenu(){
 	})
 
 }
+
 function callMeBack(){
 	let btn = document.getElementById('callMeBack');
 	let hid = document.getElementById("hiddenDiv");
@@ -100,12 +101,64 @@ function masking(){
   	var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
  	 e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
 });
+
+
+function fixNav(){
+	let nav = document.getElementById('navigation');
+	let slider = document.querySelector('.slide');
+
+	window.onscroll = ()=> {
+		if(document.body.scrollTop > 110 || document.documentElement.scrollTop > 110){
+			nav.classList.add('fixed-nav');
+			let topSpace = 0;
+			if ( document.documentElement.scrollTop > 200 ) {
+				topSpace = 0;	
+			} else {
+				topSpace = Math.round(document.documentElement.scrollTop - 200);
+				slider.classList.add('slide-top');
+
+			}	
+			
+			nav.style.top = topSpace + "px";	
+		} else {
+			nav.style.top = 0;
+			slider.classList.remove('slide-top');
+			nav.classList.remove('fixed-nav');
+		}
+	
+	}
+
 }
 
 window.onload = () => {
 	console.log("fuck");
 	mobMenu();
 	slider();
+
 	callMeBack();
 	masking();
+	fixNav();
+
+	new Glider(document.querySelector('.glider'), {
+  	slidesToShow: 1,
+  	dots: '#dots',
+  	draggable: true,
+  	resizeLock: true,
+  	arrows: {
+    	prev: '.glider-prev',
+    	next: '.glider-next'
+  	}
+});
+	new Glider(document.querySelector('.glider-2'), {
+  	slidesToShow: 1,
+  	dots: '#dots',
+  	draggable: true,
+  	resizeLock: true,
+  	arrows: {
+    	prev: '.glider-2-prev',
+    	next: '.glider-2-next'
+  	}
+});
+	 new WOW().init();
+
 }

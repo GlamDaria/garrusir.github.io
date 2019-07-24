@@ -1,4 +1,5 @@
 function slider() {
+	if (document.getElementById('slider')){
 		let slider = document.getElementById('slider');
 		let sliderWidth = slider.offsetWidth;
 		let sliderList = document.getElementById('sliderWrap');
@@ -47,7 +48,7 @@ function slider() {
 				count = 1;
 			}
 		}
-
+}
 		
 	}
 
@@ -102,6 +103,7 @@ function masking(){
 }
 
 window.onload = () => {
+	console.log("fuck");
 	mobMenu();
 	slider();
 	callMeBack();

@@ -807,6 +807,7 @@ footer .copyright {
 	background-image: url(img/mg5.png);
 }
 
+
 /*кастомные*/
 #new_year{
 	background-image: url(img/ng_bg.png);
@@ -826,20 +827,20 @@ footer .copyright {
 #contact{
 	background-image: url(img/ct_bg.png);
 }
-#no_dec header:before, #no_dec header:after{
+/*#no_dec header:before, #no_dec header:after{
 	display: none;
-}
+}*/
 #contact_block{
-	text-align: end;
-	background-color: rgba(0,0,0, .3);
-	border-radius: 50px;
+	display: flex;
+	flex-flow: column nowrap;
 	 padding: 15px 25px;
 }
-#loo{
-	 position: absolute; 
-	 right: 35%;
-	 margin-top: 2rem;
+#contact_block a{
+	color: black;
+	/*text-decoration: none;*/
 }
+
+
 /*form*/
 #hiddenDiv{
 	display: none;

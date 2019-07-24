@@ -49,7 +49,7 @@
 		<div class="container nav-wrap " id="navigation">
 			<div class="navigation">	
 				<div class="logo">
-					<img src="img/logo.svg">
+					<img src="img/logo1.svg">
 				</div>
 				<nav>
 					<a href="#">Главная</a>
@@ -88,12 +88,28 @@
 		<div class="slide">
 			<h1>Дуэт ID - Ilona&Denis</h1>
 			<h3>МУЗЫКАЛЬНЫЙ, ЯРКИЙ, ЗАЖИГАТЕЛЬНЫЙ ДУЭТ НА ВАШИ МЕРОПРИЯТИЯ В МОСКВЕ И МО. </h3>
-			<a class="btn" href="#">Подробнее</a>
+			<a class="btn" id="callMeBack" href="#">Заказать звонок</a>
 		</div>
 		<div class = "white left"></div>
         <div class = "white right"></div>
 	</header>
 	<main>
+		<div id="hiddenDiv">
+		<form id="formPopUp">
+			<svg id="closePopUp" version="1.1" x="0px" y="0px" viewBox="0 0 469.785 469.785" xml:space="preserve"><g transform="matrix(1.25 0 0 -1.25 0 45)"><g><g>
+			<path style="fill:#000000;" d="M228.294-151.753L367.489-12.558c11.116,11.105,11.116,29.116,0,40.22
+				c-11.105,11.116-29.104,11.116-40.22,0L188.073-111.533L48.866,27.663c-11.093,11.116-29.116,11.116-40.22,0
+				c-11.105-11.105-11.105-29.116,0-40.22l139.207-139.196L8.338-291.268c-11.116-11.116-11.116-29.116,0-40.22
+				c5.552-5.564,12.834-8.34,20.116-8.34c7.27,0,14.552,2.776,20.105,8.34l139.514,139.514l139.196-139.196
+				c5.564-5.552,12.834-8.34,20.116-8.34c7.27,0,14.552,2.788,20.105,8.34c11.116,11.105,11.116,29.104,0,40.22L228.294-151.753z"/></g></g></g></svg>
+
+			<legend>Заполните форму и мы свяжемся с вами в ближайшее время</legend>
+			<div class="input_style"><label>Ваше имя:</label><input type="text" name="name" placeholder="Иван" pattern="[а-яА-Я]{30}"></div>
+			<div class="input_style"><label>Ваш телефон:</label><input type="text" id="phone" name="phone" placeholder="(495) 000-0000"></div>
+			<input type="submit" name="send" value="Отправить">
+			<p>Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></p>
+		</form>
+	</div>
 		<article class="promo">
 			<div class="container">
 				<div class="promo-video col-1 wow fadeInLeft">
@@ -252,7 +268,7 @@
 						<li class="item">
 							<div class="item-wrap">
 								<div class="avatar">
-									<img src="img/img.jpg">
+									<img src="img/anna.jpg">
 								</div>
 								<div class="text">
 									<p class="content">"Дуэт ID - это профессиональные и очень крутые вокалисты, которые исполняют разнообразный репертуар. Работают с полной отдачей на все 100! Гармоничные, талантливые, с блестящим образованием артисты украсят ваш праздник и создадут невероятную атмосферу! Ребята выступают на высшем уровне не только как вокалисты, но и как сценаристы и ведущие мероприятий. Выбирайте профессионалов!"</p>
@@ -322,7 +338,7 @@
 					<div class="form-field">
 						<form action="send.php">
 							<label>Ваш номер
-								<input type="tel"  name="email" placeholder="8 800 000 00 00">
+								<input type="tel"  name="email" id="phone1" placeholder="(495) 000-0000">
 							</label>
 							<label>Ваше имя
 								<input type="text" name="name" placeholder="Ваше имя">
@@ -351,12 +367,12 @@
 					<div class="services-footer">
 					<h4>Услуги</h4>
 					<ul>
-						<li><a href="#"> Музыканты на свадьбу</a></li>
-						<li><a href="#"> Музыканты на день рождения</a></li>
-						<li><a href="#"> Музыканты на корпоратив</a></li>
-						<li><a href="#"> Музыканты на праздник</a></li>
-						<li><a href="#"> Музыканты на юбилей</a></li>
-						<li><a href="#"> Музыканты на новый год</a></li>
+						<li><a href="#"> Кавер группа на свадьбу</a></li>
+						<li><a href="#"> Кавер группа на день рождения</a></li>
+						<li><a href="#"> Кавер группа на корпоратив</a></li>
+						<li><a href="#"> Кавер группа на праздник</a></li>
+						<li><a href="#"> Кавер группа на юбилей</a></li>
+						<li><a href="#"> Кавер группа на Новый Год</a></li>
 						
 					</ul>
 				</div>

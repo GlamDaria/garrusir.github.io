@@ -179,3 +179,22 @@
 @media screen and (max-width: 425px) { 
 
 }
+@media screen and (max-width: 1046px){
+	#formPopUp{
+		padding: 4rem 3rem;
+	}
+}
+@media screen and (max-width: 824px){
+	#formPopUp{
+		height: 90vh;
+		top: 5%;
+		left: 10vw;
+		right: 10vw;
+	}
+}
+@media screen and (max-width: 600px) and (orientation: landscape){
+	#formPopUp{
+		width: 100vw;
+		left: 0;
+	}
+}

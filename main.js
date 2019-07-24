@@ -1,4 +1,5 @@
 function slider() {
+	if (document.getElementById('slider')){
 		let slider = document.getElementById('slider');
 		let sliderWidth = slider.offsetWidth;
 		let sliderList = document.getElementById('sliderWrap');
@@ -47,7 +48,7 @@ function slider() {
 				count = 1;
 			}
 		}
-
+}
 		
 	}
 
@@ -80,6 +81,28 @@ function mobMenu(){
 
 }
 
+function callMeBack(){
+	let btn = document.getElementById('callMeBack');
+	let hid = document.getElementById("hiddenDiv");
+	let close = document.getElementById("closePopUp");
+	btn.onclick = function(){
+		hid.style.display = "block";
+	}
+	close.onclick = function(){
+		hid.style.display = "none";
+	}
+}
+function masking(){
+	document.getElementById('phone').addEventListener('input', function (e) {
+  	var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+ 	 e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+	document.getElementById('phone1').addEventListener('input', function (e) {
+  	var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+ 	 e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+
+
 function fixNav(){
 	let nav = document.getElementById('navigation');
 	let slider = document.querySelector('.slide');
@@ -104,11 +127,16 @@ function fixNav(){
 		}
 	
 	}
+
 }
 
 window.onload = () => {
+	console.log("fuck");
 	mobMenu();
 	slider();
+
+	callMeBack();
+	masking();
 	fixNav();
 
 	new Glider(document.querySelector('.glider'), {
@@ -132,4 +160,5 @@ window.onload = () => {
   	}
 });
 	 new WOW().init();
+
 }

@@ -140,26 +140,35 @@ window.onload = () => {
 	masking();
 	fixNav();
 
-	new Glider(document.querySelector('.glider'), {
-  	slidesToShow: 1,
-  	dots: '#dots',
-  	draggable: true,
-  	resizeLock: true,
-  	arrows: {
-    	prev: '.glider-prev',
-    	next: '.glider-next'
-  	}
-});
-	new Glider(document.querySelector('.glider-2'), {
-  	slidesToShow: 1,
-  	dots: '#dots',
-  	draggable: true,
-  	resizeLock: true,
-  	arrows: {
-    	prev: '.glider-2-prev',
-    	next: '.glider-2-next'
-  	}
-});
+	if(document.querySelector('.glider')) {
+		new Glider(document.querySelector('.glider'), {
+		  	slidesToShow: 1,
+		  	dots: '#dots',
+		  	draggable: true,
+		  	resizeLock: true,
+		  	arrows: {
+		    	prev: '.glider-prev',
+		    	next: '.glider-next'
+		  	}
+		});
+	}
+
+	if(document.querySelector('.glider-2')) {
+		new Glider(document.querySelector('.glider-2'), {
+		  	slidesToShow: 1,
+		  	dots: '#dots',
+		  	draggable: true,
+		  	resizeLock: true,
+		  	arrows: {
+		    	prev: '.glider-2-prev',
+		    	next: '.glider-2-next'
+		  	}
+		});
+}
 	 new WOW().init();
+	 console.log('te');
+	 lightGallery(document.getElementById('gallery'), {
+    thumbnail:true
+}); 
 
 }

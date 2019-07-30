@@ -131,8 +131,29 @@ function fixNav(){
 
 }
 
+function dropDown(){
+	let btn = document.getElementById('dropdown_btn');
+	let drop = document.getElementById('closed_dropdown');
+	btn.addEventListener('mouseover', ()=>{
+		console.log('oh my');
+		drop.style.display = "flex";
+	});
+	btn.addEventListener('mouseout', ()=>{
+		console.log('oh shit');
+		drop.style.display = "none";
+	});
+	drop.addEventListener('mouseover', ()=>{
+		console.log('oh my');
+		drop.style.display = "flex";
+	});
+	drop.addEventListener('mouseout', ()=>{
+		console.log('oh shit');
+		drop.style.display = "none";
+	});
+}
+
 window.onload = () => {
-	console.log("fuck");
+	dropDown();
 	mobMenu();
 	slider();
 

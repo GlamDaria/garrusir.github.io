@@ -150,9 +150,9 @@ video {
 
 nav a {
 	margin-left: 10px;
-	padding: 15px 25px;
+	padding: 2.2rem 1.48rem;
 	transition: all .3s ease;
-	border-radius: 50px;
+	/*border-radius: 50px;*/
 }
 
 nav a:hover {
@@ -932,4 +932,28 @@ footer .copyright {
 	top: 3vh;
 	width: 1.25rem;
 	cursor: pointer;
+}
+
+/*Dropdown_menu*/
+#closed_dropdown{
+	display: none;
+	flex-flow: column nowrap;
+	background-color: rgba(32,58,73, .9);
+	width: 20%;
+	position: absolute;
+	right: 5.5rem;
+	padding-top: 2.1rem;
+	/*z-index: -1;*/
+}
+.dropdown_menu{
+	font-size: 0.9rem;
+	border-radius: 0;
+	padding: 1.25rem 1.75rem;
+	margin: 0;
+}
+#dropdown_btn{
+	background-color: transparent;
+}
+.dropdown_menu:hover{
+	width: 100%;
 }

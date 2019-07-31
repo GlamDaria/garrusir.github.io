@@ -9,7 +9,7 @@
 	}
 	nav a {
 		font-size: 0.9rem;
-		padding: 2.2rem 0.75rem;
+		padding: 2.5rem 0.75rem 2.2rem 0.75rem;
 	}
 	.slide h1 {
 		font-size: 2rem;
@@ -112,6 +112,9 @@
 	article h2 {
 		margin-top: 20px;
 	}
+	.service_photo{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 425px) {
@@ -191,10 +194,22 @@
 		left: 10vw;
 		right: 10vw;
 	}
+	#orgs{
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-columns: 1fr;
+	}
 }
 @media screen and (max-width: 600px) and (orientation: landscape){
 	#formPopUp{
 		width: 100vw;
 		left: 0;
+	}	
+}
+@media screen and (max-width: 390px){
+	#orgs div{
+		margin: 1rem 2rem;
+	}
+	.mob-nav{
+		right: -150%;
 	}
 }

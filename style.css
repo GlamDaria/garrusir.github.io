@@ -162,7 +162,6 @@ nav a:hover {
 #bar, #mob-bar {
 	color: #f2f2f2;
 	font-size: 3rem;
-	
 	cursor: pointer;
 }
 
@@ -860,9 +859,6 @@ footer .copyright {
 #contact{
 	background-image: url(img/ct_bg.png);
 }
-/*#no_dec header:before, #no_dec header:after{
-	display: none;
-}*/
 #contact_block{
 	display: flex;
 	flex-flow: column nowrap;
@@ -870,7 +866,47 @@ footer .copyright {
 }
 #contact_block a{
 	color: black;
-	/*text-decoration: none;*/
+}
+#org-imp{
+	background-image: url(img/org_bg.png);
+}
+#organize{
+	background-color: #5a7585;
+}
+#organize h2, #organize p{
+	color: #f2f2f2;
+}
+#org-imp .white{
+	background: #5a7585;
+}
+#org-imp:before, #org-imp:after{
+	background: #5a7585;
+}
+#orgs{
+	padding-top: 2rem;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+#orgs div{
+	display: block;
+	margin: 1rem 6em;
+	color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	padding: 2rem;
+}
+#organize p{
+	font-size: 1.5rem;
+}
+#orgs div p{
+	font-size: 1.75rem;
+	padding: 0;
+	margin: 0;
+}
+#orgs div a{
+	color: #f2f2f2;
+	margin-top: 0.75rem;
+	display: block;
 }
 
 
@@ -938,7 +974,7 @@ footer .copyright {
 #closed_dropdown{
 	display: none;
 	flex-flow: column nowrap;
-	background-color: rgba(32,58,73, .9);
+	background-color: rgba(0,0,0, .9);
 	width: 20%;
 	position: absolute;
 	right: 5.5rem;
@@ -956,4 +992,16 @@ footer .copyright {
 }
 .dropdown_menu:hover{
 	width: 100%;
+}
+#mob_closed_dropdown{
+	display: none;
+	flex-flow: column nowrap;
+	position: absolute;
+	right: 9.9rem;
+	background-color: #424242;
+	width: 47vw;
+}
+.mob_dropdown_menu{
+	margin: 0;
+	padding-right: 2rem !important;
 }

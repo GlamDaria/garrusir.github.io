@@ -28,6 +28,8 @@ body {
 header {
 	height: 100vh;
 	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 header:before, header:after {
@@ -383,7 +385,7 @@ article p {
 	max-width: 570px;
 }
 
-.person .glider-next, .person .glider-prev {
+.glider-contain button {
 	top: 50%;
 	transform: translateY(-25px);
 }
@@ -860,6 +862,9 @@ footer .copyright {
 #contact{
 	background-image: url(img/ct_bg.png);
 }
+#gallery{
+	background-image: url('img/gallery_bg.png');	
+}
 /*#no_dec header:before, #no_dec header:after{
 	display: none;
 }*/
@@ -933,3 +938,7 @@ footer .copyright {
 	width: 1.25rem;
 	cursor: pointer;
 }
+
+
+/*галлерея*/
+.glider-contain 

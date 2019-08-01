@@ -116,6 +116,7 @@ video {
 
 }
 .logo {
+	padding-top: 15px;
 	min-width: 100px;
 }
 
@@ -141,7 +142,6 @@ video {
 }
 
 .navigation {
-	padding: 10px 0;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -149,10 +149,17 @@ video {
 	align-items: flex-end;
 	font-family: Montserrat, Arial, sans-serif;
 }
+.navigation nav {
+	height: 85px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: flex-end;
+}
 
 nav a {
 	margin-left: 10px;
-	padding: 2.2rem 1.48rem;
+	padding: 1.9rem 1.48rem;
 	transition: all .3s ease;
 	/*border-radius: 50px;*/
 }
@@ -515,6 +522,10 @@ article p {
 
 .fa, .fas{
 	color: #709eac;
+}
+
+.services .fas, header .fas {
+	color: #f2f2f2;
 }
 .comments .arrows div:hover {
 	background-color: rgba(224,224,224, .6);
@@ -991,7 +1002,8 @@ footer .copyright {
 	width: 20%;
 	position: absolute;
 	right: 5.5rem;
-	padding-top: 2.1rem;
+	top: 70px;
+	/*padding-top: 2.1rem;*/
 	/*z-index: -1;*/
 }
 .dropdown_menu{
@@ -1002,6 +1014,7 @@ footer .copyright {
 }
 #dropdown_btn{
 	background-color: transparent;
+	position: relative;
 }
 .dropdown_menu:hover{
 	width: 100%;

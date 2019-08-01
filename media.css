@@ -213,3 +213,14 @@
 		right: -150%;
 	}
 }
+@media screen and (max-height: 571px){
+	#formPopUp{
+		padding: 0.5rem;
+	}
+	#formPopUp input{
+		padding: 0.5rem;
+	}
+	#mob_closed_dropdown{
+		top: 0;
+	}
+}

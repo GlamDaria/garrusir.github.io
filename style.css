@@ -28,6 +28,8 @@ body {
 header {
 	height: 100vh;
 	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 header:before, header:after {
@@ -382,7 +384,7 @@ article p {
 	max-width: 570px;
 }
 
-.person .glider-next, .person .glider-prev {
+.glider-contain button {
 	top: 50%;
 	transform: translateY(-25px);
 }
@@ -859,6 +861,14 @@ footer .copyright {
 #contact{
 	background-image: url(img/ct_bg.png);
 }
+
+#gallery{
+	background-image: url('img/gallery_bg.png');	
+}
+/*#no_dec header:before, #no_dec header:after{
+	display: none;
+}*/
+
 #contact_block{
 	display: flex;
 	flex-flow: column nowrap;
@@ -972,6 +982,7 @@ footer .copyright {
 	cursor: pointer;
 }
 
+
 /*Dropdown_menu*/
 #closed_dropdown{
 	display: none;
@@ -1007,3 +1018,8 @@ footer .copyright {
 	margin: 0;
 	padding-right: 2rem !important;
 }
+
+
+/*галлерея*/
+.glider-contain 
+

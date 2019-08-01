@@ -98,10 +98,12 @@ function masking(){
   	var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
  	 e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
 });
-	document.getElementById('phone1').addEventListener('input', function (e) {
-  	var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
- 	 e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
-});
+	if (document.getElementById('phone1')){
+		document.getElementById('phone1').addEventListener('input', function (e) {
+  		var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+ 	 	e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+		});
+	}
 }
 
 function fixNav(){
@@ -111,6 +113,7 @@ function fixNav(){
 	window.onscroll = ()=> {
 		if(document.body.scrollTop > 110 || document.documentElement.scrollTop > 110){
 			nav.classList.add('fixed-nav');
+			document.getElementById('closed_dropdown').style.background = "rgba(32,58,73, .9)";
 			let topSpace = 0;
 			if ( document.documentElement.scrollTop > 200 ) {
 				topSpace = 0;	
@@ -125,14 +128,52 @@ function fixNav(){
 			nav.style.top = 0;
 			slider.classList.remove('slide-top');
 			nav.classList.remove('fixed-nav');
+			document.getElementById('closed_dropdown').style.background = "rgba(0,0,0, .9)";
 		}
 	
 	}
 
 }
 
+function dropDown(){
+	let btn = document.getElementById('dropdown_btn');
+	let drop = document.getElementById('closed_dropdown');
+	btn.addEventListener('mouseover', ()=>{
+		drop.style.display = "flex";
+	});
+	btn.addEventListener('mouseout', ()=>{
+		drop.style.display = "none";
+	});
+	drop.addEventListener('mouseover', ()=>{
+		drop.style.display = "flex";
+	});
+	drop.addEventListener('mouseout', ()=>{
+		drop.style.display = "none";
+	});
+
+
+	let mob_btn = document.getElementById('mob_dropdown_btn');
+	let mob_drop = document.getElementById('mob_closed_dropdown');
+	mob_btn.addEventListener('mouseover', ()=>{
+		console.log('oh my');
+		mob_drop.style.display = "flex";
+	});
+	mob_btn.addEventListener('mouseout', ()=>{
+		console.log('oh shit');
+		mob_drop.style.display = "none";
+	});
+	mob_drop.addEventListener('mouseover', ()=>{
+		console.log('oh my');
+		mob_drop.style.display = "flex";
+	});
+	mob_drop.addEventListener('mouseout', ()=>{
+		console.log('oh shit');
+		mob_drop.style.display = "none";
+	});
+}
+
 window.onload = () => {
-	console.log("fuck");
+	dropDown();
 	mobMenu();
 	slider();
 

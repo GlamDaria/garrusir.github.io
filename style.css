@@ -104,7 +104,7 @@ header .contacts-content div {
 }
 
 video {
-	filter: blur(2px);
+	/*filter: blur(2px);*/
 	z-index: -100;
 	position: absolute;
 	top: 0;
@@ -122,6 +122,10 @@ video {
 
 #studio_photo{
 	transform: translate(-24px, 34px) scale(1.4);
+}
+#dom-cult{
+	height: 150%;
+	transform: translate(2px, -40px);
 }
 
 .nav-wrap {

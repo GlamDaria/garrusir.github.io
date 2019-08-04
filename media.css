@@ -224,3 +224,8 @@
 		top: 0;
 	}
 }
+@media screen and (max-width: 530px){
+	.service_photos{
+		display: none;
+	}
+}

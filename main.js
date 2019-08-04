@@ -206,8 +206,9 @@ window.onload = () => {
 		  	}
 		});
 }
-	 new WOW().init();
-	 console.log('te');
+	 if (document.querySelector('.wow') && navigator.userAgent.match(/Android|iPad|iPhone|iPod/i) == null ) {
+	 	new WOW().init();
+	 }
 	 lightGallery(document.getElementById('gallery'), {
     thumbnail:true
 }); 

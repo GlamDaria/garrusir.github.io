@@ -117,7 +117,11 @@ video {
 }
 .logo {
 	padding-top: 15px;
-	min-width: 100px;
+	min-width: 70px;
+}
+
+#studio_photo{
+	transform: translate(-24px, 34px) scale(1.4);
 }
 
 .nav-wrap {
@@ -376,7 +380,7 @@ article p {
 }
 
 .about {
-	background-image: url("img/bg.png");
+	background-image: url("img/bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -604,7 +608,7 @@ article p {
 	flex-flow: row wrap;
 }
 .client_container .client_photo{
-	background-image: url(img/sprites2.png);
+	background-image: url(img/sprites2.webp);
 	width: 250px;
 	height: 114px;
 	content: "";
@@ -671,7 +675,7 @@ article p {
 
 .form-section {
 	background-color: #ccc;
-	background-image: url("img/bg-form.png");
+	background-image: url("img/bg-form.jpg");
 	background-size: cover;
 	/*background-attachment: fixed;*/
 }
@@ -794,7 +798,7 @@ footer .copyright {
 
 /*услуги*/
 .bg_services{
-	background-image: url(img/bg_2.png);
+	background-image: url(img/bg_2.jpg);
 }
 .service{
 	padding: 6rem 0;
@@ -834,47 +838,47 @@ footer .copyright {
 	background-blend-mode: overlay;
 }
 .service_photo:nth-child(1){
-	background-image: url(img/mg4.png);
+	background-image: url(img/mg4.jpg);
 }
 .service_photo:nth-child(2){
-	background-image: url(img/mg1.png);
+	background-image: url(img/mg1.jpg);
 }
 .service_photo:nth-child(3){
-	background-image: url(img/mg2.png);
+	background-image: url(img/mg2.jpg);
 }
 .service_photo:nth-child(4){
-	background-image: url(img/mg3.png);
+	background-image: url(img/mg3.jpg);
 }
 .service_photo:nth-child(5){
-	background-image: url(img/mg.png);
+	background-image: url(img/mg.jpg);
 }
 .service_photo:nth-child(6){
-	background-image: url(img/mg5.png);
+	background-image: url(img/mg5.jpg);
 }
 
 
 /*кастомные*/
 #new_year{
-	background-image: url(img/ng_bg.png);
+	background-image: url(img/ng_bg.jpg);
 }
 #birthday{
-	background-image: url(img/bd_bg1.png);
+	background-image: url(img/bd_bg1.jpg);
 }
 #party{
-	background-image: url(img/pt_bg.png);
+	background-image: url(img/pt_bg.jpg);
 }
 #anniversary{
-	background-image: url(img/an_bg.png);
+	background-image: url(img/an_bg.jpg);
 }
 #corporativ{
-	background-image: url(img/cor_bg.png);
+	background-image: url(img/cor_bg.jpg);
 }
 #contact{
-	background-image: url(img/ct_bg.png);
+	background-image: url(img/ct_bg.jpg);
 }
 
 #gallery{
-	background-image: url('img/gallery_bg.png');	
+	background-image: url('img/gallery_bg.jpg');	
 }
 /*#no_dec header:before, #no_dec header:after{
 	display: none;
@@ -891,7 +895,7 @@ footer .copyright {
 	color: black;
 }
 #org-imp{
-	background-image: url(img/org_bg.png);
+	background-image: url(img/org_bg.jpg);
 }
 #organize{
 	background-color: #5a7585;

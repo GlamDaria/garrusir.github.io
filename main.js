@@ -165,7 +165,7 @@ function resolvedSend(){
 		document.getElementById("hiddenDiv").style.display = "none";
 	}
 	document.getElementById('formPopUp').innerHTML = "";
-	document.getElementById('formPopUp').append(d);	
+	document.getElementById('formPopUp').append(d);
 }
 function masking(){
 	document.getElementById('phone').addEventListener('input', function (e) {
@@ -281,11 +281,11 @@ window.onload = () => {
 		  	}
 		});
 }
-	 if (document.querySelector('.wow') && navigator.userAgent.match(/Android|iPad|iPhone|iPod/i) == null ) {
+	 if (document.querySelector('.wow') && navigator.userAgent.match(/Android|iPad|iPhone|iPod/i) !== null ) {
 	 	new WOW().init();
 	 }
-	 lightGallery(document.getElementById('gallery'), {
+	 /*lightGallery(document.getElementById('gallery'), {
     thumbnail:true
-}); 
+}); */
 
 }

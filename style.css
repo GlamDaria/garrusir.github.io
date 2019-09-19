@@ -777,6 +777,7 @@ footer .soc-icons {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
+	padding-top: 1rem;
 }
 
 .footer-wrap {

@@ -26,6 +26,7 @@ body {
 }
 
 header {
+	min-height: 500px;
 	height: 100vh;
 	position: relative;
 	background-size: cover;
@@ -248,7 +249,7 @@ nav a:hover {
 
 }
 .slide-top {
-	margin-top: 235px;
+	margin-top: 220px;
 }
 .slide h1 {
 	font-family: Montserrat, Arial, sans-serif;
@@ -515,11 +516,13 @@ article p {
 	transition: all .7s ease-in-out;
 }
 .comments .arrows div {
+	font-family: 'Tahoma', sans-serif;
+	color: #666;
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 50px;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -536,11 +539,8 @@ article p {
 .services .fas, header .fas {
 	color: #f2f2f2;
 }
-.comments .arrows div:hover {
-	background-color: rgba(224,224,224, .6);
-}
-.comments .arrows div:hover i {
-	text-shadow: none;
+ .comments .arrows div:hover {
+	color: #ccc;
 }
 
 .comments .arrows .left {
